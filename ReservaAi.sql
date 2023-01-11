@@ -1,13 +1,13 @@
 CREATE TABLE Aluno (
     matricula_alu VARCHAR(13) PRIMARY KEY,
     nome_alu VARCHAR(60),
-    cpf VARCHAR(14),
+    cpf_alu VARCHAR(14),
     data_nasc DATE,
-    email VARCHAR(50),
+    email_alu VARCHAR(50),
     turma CHARACTER
 );
 
-INSERT INTO Aluno (matricula_alu, nome_alu, cpf, data_nasc, email, turma)
+INSERT INTO Aluno (matricula_alu, nome_alu, cpf_alu, data_nasc, email_alu, turma)
 VALUES
 ('capic7348tads', 'Pedro Henrique Gomes', '099.422.764-40', '1998-01-08', 'pedrogomes7348@ifpi.com', 3 ),
 ('capic6730tads', 'Sabrina Mendes', '695.455.477-40', '2001-02-19', 'sabrinamendes6730@ifpi.com', 5),
@@ -18,16 +18,16 @@ VALUES
 CREATE TABLE Professor (
     matricula_prof VARCHAR(4)PRIMARY KEY,
     nome_prof VARCHAR(60),
-    cpf VARCHAR(14),
+    cpf_prof VARCHAR(14),
     data_nasc DATE,
-    email VARCHAR(50),
+    email_prof VARCHAR(50),
     disciplina VARCHAR(30)
 );
-INSERT INTO Professor (matricula_prof, nome_prof, cpf, data_nasc, email, disciplina)
+INSERT INTO Professor (matricula_prof, nome_prof, cpf_prof, data_nasc, email_prof, disciplina)
 VALUES	
 ('3313', 'Benedito Francisco Alves', '195.986.893-44', '1977-04-07', 'beneditoalves@ifpi.com', 'Banco de Dados'),
 ('3605', 'Isaac Leandro  Viana', '468.567.153-82', '1980-08-02', 'isaacviana@ifpi.com', 'Redes de Computadores'),
-('3120', 'Isis Marli Nogueira', '746.775.533-35', '1988-11-28', 'isisnogueira@ifpi.com', 'Estrutura de Dados');
+('3120', 'Isis Marli Nogueira', '746.775.533-35', '1988-11-28', 'isisnogueira@ifpi.com', 'Estrutura de Dados'),
 ('3245', 'Juliana Isabelle Gonçalves','813.049.783-20', '1981/04/01','juisabellegoncalves@ifpi.com.br', 'Estatística');
 
 CREATE TABLE Laboratorio (
